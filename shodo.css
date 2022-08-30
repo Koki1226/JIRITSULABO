@@ -50,7 +50,6 @@ h1 img {
 
 /* ドロップダウン */
 .dropdown > li {
-	display:inline-block;
 	position:relative;
 }
 .dropdown > li > ul {

@@ -45,22 +45,34 @@ h1 img {
 
 /* ドロップダウン */
 .dropdown > li {
-	display:inline-block;
 	position:relative;
 }
-.dropdown > li > ul {
-	display:none;
+
+ul.can {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
 }
-.dropdown > li:hover > ul {
+.dropdown > li:hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+li.headmenu ul.can {
 	display:block;
 	position:absolute;
-    width: 7.5rem;
+    width: 100%;
 	padding:0;
 	margin:0;
-	top:1.5em;
 	left:0;
 	list-style-type:none;
     background-color: #F6D6AC;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.headmenu:hover ul.can {
+    top: -30px;
+    visibility: visible;
+    opacity: 1;
 }
 .dropdown > li.headmenu:hover {
     transform: translateY(-3px);
