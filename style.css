@@ -1,0 +1,635 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 170px;
+}
+/* ロゴとメニュー */
+header {
+    z-index: 1;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin: 0 auto ;
+    background-color: #F6D6AC;
+    height: 140px;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 9.5px;
+}
+.dropdown{
+    display: flex;
+    gap: 30px;
+    list-style-type:none;
+    align-items: center;
+}
+.headmenu {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+h1 img {
+    width: 10rem;
+    height: 7rem;
+    object-fit: cover;
+}
+
+/* ドロップダウン */
+.dropdown > li {
+	display:inline-block;
+	position:relative;
+}
+.dropdown > li > ul {
+	display:none;
+}
+.dropdown > li:hover > ul {
+	display:block;
+	position:absolute;
+    width: 7.5rem;
+	padding:0;
+	margin:0;
+	top:1.5em;
+	left:0;
+	list-style-type:none;
+    background-color: #F6D6AC;
+}
+.dropdown > li.headmenu:hover {
+    transform: translateY(-3px);
+}
+.can > li:hover {
+    transform: translateY(-3px);
+}
+
+.can > li {
+    border-bottom: 1px solid black;
+}
+
+.cantitle:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 0 15px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* 入塾申し込みボタン */
+.form {
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(255, 149, 0);
+    padding: 10px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 1.2rem;
+}
+.form:hover {
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+/* バーガーメニュー */
+.burgermenu {
+    display: none;
+}
+.burger {
+    display: none;
+}
+
+/* キャッチコピー */
+br {
+    display: none;
+}
+.slogan {
+    font-size: 300%;
+    margin: 60px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
+    font-weight: lighter;
+    /* アニメーション実行 */
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    position: absolute;
+    top: 40%;
+    background-color:  rgb(255,255,255,0.7);
+}
+.slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation :slideshow 24s linear infinite;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slide > img {
+    object-fit: cover;
+    z-index: -1;
+}
+.slogandiv,.slide {
+   height: 660px;
+}
+.slide img:nth-child(2){
+    animation-delay: 8s;
+  }
+   
+.slide img:last-child{
+    animation-delay: 16s;
+  }
+/* アニメーション設定 */
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 背景アニメーション */
+@keyframes slideshow {
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 1;
+    }
+    28%{
+      opacity: 1
+    }
+    38%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+/* 文字強調 */
+span {
+    color: red;
+}
+.slash {
+    color: black;
+}
+.slogandiv span {
+    font-size: 5rem;
+}
+/* 内容 */
+section {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+section h2 {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: solid;
+}
+.introduction img {
+    width: 90%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.introduction p {
+    font-size: 2rem;
+}
+/* クラス紹介 */
+.class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.class > a > div {
+    box-shadow: 2px 2px 4px;
+    text-decoration: none;
+    color: black;
+}
+.classdiv {
+    width: 25rem;
+    height: 18rem;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.class img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.classdiv2 {
+    width: 25rem;
+    height: 18rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.class a {
+    text-decoration: none;
+    color: black;
+}
+.class > a:hover {
+    transform: translateY(-10px);
+}
+h3 {
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+.classdiv2 p {
+    font-size: 70%;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.link {
+    display: flex;
+    justify-content: right;
+    color: rgb(45, 66, 255);
+    position: relative;
+    font-size: 100%;
+    bottom: 25px;
+    margin-right: 10px;
+}
+/* 授業風景 */
+.scenery img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+/* 資格 */
+.achievement h3 {
+    font-size: 1.8rem;
+}
+.achievement p {
+    font-size: 1.5rem;
+}
+
+/* お問合せ */
+.inline {
+    display: inline-block;
+    width: 100%;
+}
+.phonenumber{
+    font-size: 5rem;
+    color: rgba(255, 0, 195, 0.758);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-weight: bold;
+}
+.contact {
+    width: 100%;
+}
+.phonenumber img {
+    width: 100%;
+}
+.phonenumber dd {
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+}
+.adress {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+iframe {
+    width: 100%;
+}
+.LINE {
+    font-size: 2rem;
+}
+.LINE img {
+    width: 350px;
+    height: 350px;
+}
+.tap {
+    display: none;
+}
+
+/* フッター */
+footer {
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #e6e9ec;
+}
+.classnav {
+    display: flex;
+    justify-content: center;
+}
+.footmenu {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+footer nav {
+    margin-bottom: 30px;
+}
+footer small {
+    font-size: 80%;
+}
+/* トップページリンク */
+/*リンクの形状*/
+#page-top a{
+    display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#ff0004;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+
+#page-top a:hover{
+    background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+    animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+    animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1024px) {
+    /* ヘッダー */
+    .headnav {
+        display: none;
+    }
+    
+    .form {
+        position: relative;
+        right: 50px;
+    }
+    /* バーガーメニュー */
+    .burger {
+        display: flex;
+    }
+    .burgermenu {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(photo/menu.svg);
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 2;
+    }
+    .burgermenu.is-active {
+        background-image: url(photo/close.svg);
+    }
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-color: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+    .head-menu{
+        position: relative;
+        top: 150px;
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .menu.is-active {
+        display: block;
+    }
+    /* キャッチコピー */
+    br {
+        display: block;
+    }
+    /* 内容 */
+    section h2 {
+        font-size: 1.8rem;
+    }
+    .class {
+        flex-flow: column;
+    }
+    .introduction p {
+        font-size: 1.6rem;
+    }
+    .achievement h3 {
+        font-size: 1.4rem;
+    }
+    .achievement p {
+        font-size: 1.2rem;
+    }
+    /* お問合せ */
+    .tap {
+        display: block;
+    }
+    .phonenumber {
+        font-size: 3rem;
+    }
+    .phonenumber dd{
+        width: 50px;
+        height: 50px;
+    }
+    .LINE {
+        font-size: 1.6rem;
+    }
+    .LINE img{
+        width: 300px;
+        height: 300px;
+    }
+    .adress {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 600px) {
+    /* ロゴとメニュー */
+    h1 img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .form {
+        right: 14px;
+        bottom: 0px;
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+    /* バーガーメニュー */
+    .head-menu{
+        top: 100px;
+        font-size: 1.5rem;
+    }
+    /* キャッチコピー */
+    .slogan {
+        font-size: 150%;
+        top: 30%;
+    }
+    .slogandiv span {
+        font-size: 3rem;
+    }
+    .slogandiv,.slide {
+        height: 396px;
+    }
+    /* 内容 */
+    section h2 {
+        font-size: 1.7rem;
+    }
+    .classdiv {
+        width: 19rem;
+        height: 12rem;
+    }
+    .classdiv2 {
+        font-size: 1.2rem;
+        width: 19rem;
+        height: 14rem;
+    }
+    .introduction p {
+        font-size: 1.3rem;
+    }
+    .scenery img {
+        width: 260px;
+        height: 230px;
+    }
+    /* お問合せ */
+    .LINE {
+        font-size: 1rem;
+    }
+    .phonenumber {
+        font-size: 1.65rem;
+    }
+    .phonenumber dd {
+        width: 30px;
+        height: 30px;
+    }
+    .contact,.adress {
+        font-size: 1rem;
+    }
+    .LINE img {
+        width: 100px;
+        height: 100px;
+    }
+    .classnav {
+        display: block;
+    }
+    .footmenu {
+        font-size: 1.2rem;
+    }
+    .slash {
+        display: none;
+    }
+}
+@media (max-width:360px) {
+    /* キャッチコピー */
+    .slogandiv,.slide {
+        height: 290px;
+    }
+    .slogan {
+        font-size: 120%;
+        top: 25%;
+    }
+    .slogandiv span {
+        font-size: 2rem;
+    }
+    /* クラス紹介 */
+    .classdiv {
+        width: 16rem;
+        height: 14rem;
+    }
+    .classdiv2 {
+        font-size: 1.1rem;
+        width: 16rem;
+        height: 14rem;
+    }
+    /* 内容 */
+    .adress {
+        font-size: 0.9rem;
+    }
+    .contact {
+        font-size: 0.9rem;
+    }
+    iframe {
+        width: 15rem;
+        height: 15rem;
+    }
+    .LINE {
+        font-size: 0.85rem;
+    }
+    .phonenumber {
+        font-size: 1.34rem;
+    }
+    .classnav {
+        display: block;
+    }
+    .slash{
+        display: none;
+    }
+}
