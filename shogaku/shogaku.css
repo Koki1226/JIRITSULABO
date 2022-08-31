@@ -149,34 +149,44 @@ span {
 }
 
 /* 内容 */
-div.lesson span {
-    color: blue;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.lesson {
-    font-size: 1.5rem;
-    width: 70%;
-    position: relative;
-    left: 15%;
-}
-div.lesson p:nth-last-of-type(2),div.lesson p:nth-last-of-type(3){
-    margin: 15px 0;
-    width: 30%;
-    border-bottom: solid;
-    position: relative;
-    left: 35%;
-} 
 section {
     text-align: center;
     margin: 30px 4%;
 }
 section h2 {
+    width: 100%;
     font-size: 3rem;
     margin-top: 30px;
     margin-bottom: 20px;
     border-bottom: solid;
 }
+/* レッスン内容 */
+.lesson div span {
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.lesson div {
+    width: 70%;
+    background-color: rgb(255, 227, 193);
+    padding-top: 10px;
+}
+.lesson {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lesson div p:nth-last-of-type(2),.lesson div p:nth-last-of-type(3){
+    text-decoration: underline;
+    margin: 15px 0;
+    width: 100%;
+} 
+.lesson p:nth-of-type(5) {
+    text-align: left;
+    margin: 2% 5%;
+}
+/* 資格 */
 .achievement h3 {
     font-size: 1.8rem;
 }
@@ -369,6 +379,14 @@ footer small {
     section h2 {
         font-size: 1.8rem;
     }
+    /* レッスン内容 */
+    .lesson div span {
+        font-size: 1.6rem;
+    }
+    .lesson {
+        font-size: 1.2rem;
+    }
+    /* 資格 */
     .achievement h3 {
         font-size: 1.4rem;
     }
@@ -424,12 +442,21 @@ footer small {
     }
     .slogandiv {
         height: 396px;
-     }
+    }
     /* 内容 */
     section h2 {
         font-size: 1.3rem;
     }
-    
+    /* レッスン内容 */
+    .lesson div span {
+        font-size: 1.1rem;
+    }
+    .lesson {
+        font-size: 0.9rem;
+    }
+    .lesson div {
+        width: auto;
+    }
     /* お問合せ */
     .LINE {
         font-size: 1rem;
@@ -465,6 +492,11 @@ footer small {
         font-size: 2rem;
     }
     /* 内容 */
+    /* レッスン内容 */
+    .lesson div span {
+        font-size: 0.9rem;
+    }
+    /* お問合せ */
     .adress {
         font-size: 0.9rem;
     }

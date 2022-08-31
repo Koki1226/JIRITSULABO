@@ -169,11 +169,13 @@ section h2 {
     font-size: 1.5rem;
 }
 .lesson div {
+    padding-top: 10px;
     margin-bottom: 20px;
     width: 70%;
 }
 .lesson div p {
     text-align: left;
+    margin: 2% 5%;
 }
 .lesson div:nth-of-type(1) {
     background-color: rgb(255 200 255);
@@ -375,6 +377,14 @@ footer small {
     section h2 {
         font-size: 1.8rem;
     }
+    /* レッスン内容 */
+    .lesson {
+        font-size: 1.2rem;
+    }
+    .lesson h3 {
+        font-size: 1.5rem;
+    }
+    /* 資格 */
     .achievement h3 {
         font-size: 1.4rem;
     }
@@ -430,10 +440,20 @@ footer small {
     }
     .slogandiv {
         height: 396px;
-     }
+    }
     /* 内容 */
     section h2 {
         font-size: 1.3rem;
+    }
+    /* レッスン内容 */
+    .lesson {
+        font-size: 1rem;
+    }
+    .lesson h3 {
+        font-size: 1.3rem;
+    }
+    .lesson div {
+        width: auto;
     }
     /* お問合せ */
     .LINE {
