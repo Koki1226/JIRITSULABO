@@ -17,34 +17,40 @@ header {
     justify-content: space-between;
     padding: 0 4%;
     margin: 0 auto ;
-    background-color: #F6D6AC;
+    background-color: black;
+}
+.headmenu a {
+    color: white;
+    font-weight: bold;
+
 }
 li a {
-    color: black;
     text-decoration: none;
     text-align: center;
     padding-bottom: 9.5px;
+}
+
+.dropdown{
+    display: flex;
+}
+.headmenu {
+    list-style: none;
+    font-size: 1.2rem;
+}
+h1 img {
+    width: 8rem;
+    height: 7rem;
+    object-fit: cover;
 }
 .dropdown{
     display: flex;
     gap: 30px;
     list-style-type:none;
 }
-.headmenu {
-    list-style: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-h1 img {
-    width: 9rem;
-    height: 8rem;
-    object-fit: cover;
-}
 
 /* ドロップダウン */
 .dropdown > li {
 	position:relative;
-    
 }
 .dropdown > li > ul {
 	display:none;
@@ -67,7 +73,7 @@ h1 img {
 }
 
 .can > li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 .cantitle:after {
     content: '';
@@ -75,8 +81,8 @@ h1 img {
     width: 6px;
     height: 6px;
     margin: 0 0 0 15px;
-    border-right: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -105,7 +111,11 @@ h1 img {
     display: none;
 }
 
+
 /* キャッチコピー */
+br {
+    display: none;
+}
 .slogan {
     font-size: 300%;
     margin: 60px 0;
@@ -121,6 +131,15 @@ h1 img {
     position: absolute;
     top: 40%;
     background-color:  rgb(255,255,255,0.7);
+}
+.slogandiv > img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+.slogandiv {
+    height: 660px;
+    z-index: -1;
 }
 /* アニメーション */
 @keyframes fadeUpAnime{
@@ -138,35 +157,8 @@ span {
     font-size: 5rem;
     color: red;
 }
-.slogandiv > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.slogandiv {
-   height: 660px;
-   z-index: -1;
-}
 
 /* 内容 */
-div.lesson span {
-    color: blue;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.lesson {
-    font-size: 1.5rem;
-    width: 70%;
-    position: relative;
-    left: 15%;
-}
-div.lesson p:nth-last-of-type(2),div.lesson p:nth-last-of-type(3){
-    margin: 15px 0;
-    width: 30%;
-    border-bottom: solid;
-    position: relative;
-    left: 35%;
-} 
 section {
     text-align: center;
     margin: 30px 4%;
@@ -240,6 +232,10 @@ footer {
     list-style: none;
     font-size: 1.5rem;
     margin-bottom: 15px;
+}
+.footmenu a {
+    color: black;
+    text-decoration: none;
 }
 footer nav {
     margin-bottom: 30px;
@@ -330,15 +326,15 @@ footer small {
         display: block;
         width: 40px;
         height: 40px;
-        background-image: url(photo/menu.svg);
-        background-size: 40px;
+        background-image: url(/photo/menu_white.svg);
+        background-size: 32px;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
         z-index: 2;
     }
     .burgermenu.is-active {
-        background-image: url(photo/close.svg);
+        background-image: url(/photo/close.svg);
     }
     .menu {
         width: 100vw;
@@ -356,7 +352,10 @@ footer small {
         top: 150px;
         margin-top: 20px;
         font-size: 2rem;
-        
+    }
+    .head-menu a {
+        color: black;
+        text-decoration: none;
     }
     .menu.is-active {
         display: block;
@@ -365,6 +364,7 @@ footer small {
     br {
         display: block;
     }
+
     /* 内容 */
     section h2 {
         font-size: 1.8rem;
@@ -416,11 +416,11 @@ footer small {
     }
     /* キャッチコピー */
     .slogan {
-        font-size: 190%;
+        font-size: 150%;
         top: 30%;
     }
-    .slogandiv span {
-        font-size: 3rem;
+    span {
+        font-size: 2rem;
     }
     .slogandiv {
         height: 396px;
@@ -429,7 +429,6 @@ footer small {
     section h2 {
         font-size: 1.3rem;
     }
-    
     /* お問合せ */
     .LINE {
         font-size: 1rem;
