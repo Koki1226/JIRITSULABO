@@ -217,7 +217,6 @@ section h2 {
 }
 .phonenumber{
     font-size: 5rem;
-    color: rgba(255, 0, 195, 0.758);
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -231,8 +230,8 @@ section h2 {
 }
 .phonenumber dd {
     margin-right: 10px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 .adress {
     font-size: 1.8rem;
