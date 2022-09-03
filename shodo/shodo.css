@@ -102,7 +102,24 @@ h1 img {
     background-color: rgb(255, 149, 0);
     color: white;
 }
-
+.form_main {
+    background-color: rgb(255, 149, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 3rem;
+}
+.form_main:hover {
+    background-color: white;
+    color: rgb(255, 149, 0);
+    border: solid rgb(255, 149, 0);
+    border-width: 5px;
+}
+.formdiv {
+    margin: 50px 0;
+}
 /* バーガーメニュー */
 .burgermenu {
     display: none;
@@ -388,6 +405,10 @@ footer small {
     br {
         display: block;
     }
+    /* 入塾申し込みフォーム */
+    .form_main {
+        font-size: 2rem;
+    }
     /* 内容 */
     section h2 {
         font-size: 1.8rem;
@@ -455,6 +476,10 @@ footer small {
     .slogandiv {
         height: 396px;
      }
+     /* 入塾申し込みフォーム */
+    .form_main {
+        font-size: 1.5rem;
+    }
     /* 内容 */
     section h2 {
         font-size: 1.3rem;
