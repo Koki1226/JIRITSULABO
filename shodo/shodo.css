@@ -388,7 +388,6 @@ footer small {
     br {
         display: block;
     }
-
     /* 内容 */
     section h2 {
         font-size: 1.8rem;
@@ -398,6 +397,13 @@ footer small {
     }
     .achievement p {
         font-size: 1.2rem;
+    }
+    /* レッスン内容 */
+    .lesson {
+        font-size: 1.2rem;
+    }
+    .lesson h3 {
+        font-size: 1.5rem;
     }
     /* お問合せ */
     .tap {
@@ -452,6 +458,16 @@ footer small {
     /* 内容 */
     section h2 {
         font-size: 1.3rem;
+    }
+    /* レッスン内容 */
+    .lesson {
+        font-size: 1rem;
+    }
+    .lesson h3 {
+        font-size: 1.3rem;
+    }
+    .lesson div {
+        width: auto;
     }
     /* お問合せ */
     .LINE {
