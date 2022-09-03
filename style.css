@@ -305,13 +305,6 @@ h3 {
     bottom: 25px;
     margin-right: 10px;
 }
-/* 授業風景 */
-.scenery img {
-    object-fit: cover;
-    width: 500px;
-    height: 300px;
-    margin: 10px;
-}
 /* 資格 */
 .achievement h3 {
     font-size: 1.8rem;
@@ -659,10 +652,6 @@ footer small {
     }
     .introduction p {
         font-size: 1.3rem;
-    }
-    .scenery img {
-        width: 260px;
-        height: 230px;
     }
     /* 代表挨拶 */
     .greeting div:nth-of-type(1) {

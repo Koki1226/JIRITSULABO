@@ -209,6 +209,13 @@ section h2 {
 .lesson div:nth-of-type(2) {
     background-color: rgb(206, 168, 255);
 }
+/* 授業風景 */
+.scenery img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
 /* 資格 */
 .achievement h3 {
     font-size: 1.8rem;
@@ -492,6 +499,11 @@ footer small {
     }
     .lesson div {
         width: auto;
+    }
+    /* 授業風景 */
+    .scenery img {
+        width: 260px;
+        height: 230px;
     }
     /* お問合せ */
     .LINE {
