@@ -23,12 +23,13 @@ li a {
     color: black;
     text-decoration: none;
     text-align: center;
-    padding-bottom: 9.5px;
+    padding-bottom: 2.5px;
 }
 .dropdown{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     list-style-type:none;
+    align-items: center;
 }
 .headmenu {
     list-style: none;
@@ -44,31 +45,19 @@ h1 img {
 /* ドロップダウン */
 .dropdown > li {
 	position:relative;
-    
 }
-.dropdown > li > ul {
-	display:none;
+
+.dropdown > li.headmenu:hover > a {
+    color: #fff;
 }
-.dropdown > li:hover ul {
-	display:block;
-	position:absolute;
-    width: 7.5rem;
-	padding:0;
-	margin:0;
-	top:1.5em;
-	left:0;
-	list-style-type:none;
-}
-.dropdown > li.headmenu:hover {
-    transform: translateY(-5px);
-}
-.can > li:hover {
-    transform: translateY(-5px);
+.can > li:hover > a {
+    color: #fff;
 }
 
 .can > li {
     border-bottom: 1px solid black;
 }
+
 .cantitle:after {
     content: '';
     display: inline-block;
@@ -80,6 +69,33 @@ h1 img {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	transition:all .3s;
+}
+nav li.headmenu ul{
+    /*絶対配置で位置を指定*/
+	position: absolute;
+	left:0;
+	top:40px;
+	z-index: 4;
+    /*形状を指定*/
+	background:#F6D6AC;
+	width:180px;
+    /*はじめは非表示*/
+	visibility: hidden;
+	opacity: 0;
+    /*アニメーション設定*/
+	transition: all .3s;
+}
+nav li.headmenu:hover > ul,
+nav li.headmenu ul li:hover > ul,
+nav li.headmenu:active > ul,
+nav li.headmenu ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 入塾申し込みボタン */
