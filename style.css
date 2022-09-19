@@ -239,13 +239,33 @@ section h2 {
     margin-bottom: 20px;
     border-bottom: solid;
 }
+/* 教室理念 */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .introduction img {
     width: 90%;
     object-fit: cover;
     margin: 10px 0;
 }
 .introduction p {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.introduction div {
+    width: 70%;
+    background-color: rgb(255, 227, 193);
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.introduction dt {
+    font-size: 1.7rem;
+}
+.introduction dd {
+    font-size: 1.5rem;
 }
 /* クラス紹介 */
 .class {
@@ -370,6 +390,9 @@ h4 {
 }
 .greeting p {
     margin-bottom: 20px;
+}
+.greeting br {
+    display: block;
 }
 /* お問合せ */
 .inline {
@@ -560,12 +583,24 @@ footer small {
     section h2 {
         font-size: 2rem;
     }
+    /* 教室理念 */
+    .introduction p {
+        font-size: 1.9rem;
+    }
+    .introduction div {
+        width: 80%;
+    }
+    .introduction dt {
+        font-size: 1.2rem;
+    }
+    .introduction dd {
+        font-size: 1.1rem;
+    }
+    /* クラス紹介 */
     .class {
         flex-flow: column;
     }
-    .introduction p {
-        font-size: 1.6rem;
-    }
+    /* 資格 */
     .achievement h3 {
         font-size: 1.4rem;
     }
@@ -659,6 +694,21 @@ footer small {
     section h2 {
         font-size: 1.7rem;
     }
+    /* 教室理念 */
+    .introduction p {
+        font-size: 0.9rem;
+    }
+    .introduction div {
+        width: 70%;
+        padding: 10px;
+    }
+    .introduction dt {
+        font-size: 0.8rem;
+    }
+    .introduction dd {
+        font-size: 0.8rem;
+    }
+    /* クラス紹介 */
     .classdiv {
         width: 19rem;
         height: 12rem;
@@ -667,9 +717,6 @@ footer small {
         font-size: 1.2rem;
         width: 19rem;
         height: 14rem;
-    }
-    .introduction p {
-        font-size: 1.3rem;
     }
     /* 留学 */
     .abroad p {
@@ -729,6 +776,16 @@ footer small {
         font-size: 2rem;
     }
     /* 内容 */
+    /* 教室理念 */
+    .introduction p {
+        font-size: 0.8rem;
+    }
+    .introduction dt {
+        font-size: 0.7rem;
+    }
+    .introduction dd {
+        font-size: 0.7rem;
+    }
     /* クラス紹介 */
     .classdiv {
         width: 16rem;
