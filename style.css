@@ -326,11 +326,29 @@ h3 {
     margin-right: 10px;
 }
 /* 資格 */
+section.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement div {
+    width: 70%;
+    padding: 30px;
+    border-radius: 40px;
+}
+.achievement div:nth-of-type(1) {
+    margin-bottom: 20px;
+    background-color: #ffe0b6;
+}
+.achievement div:nth-of-type(2) {
+    background-color: #ffb6b6;
+}
 .achievement h3 {
     font-size: 1.8rem;
 }
 .achievement p {
     font-size: 1.5rem;
+    text-align: left;
 }
 /* 留学 */
 .abroad > p {
