@@ -218,6 +218,14 @@ section h2 {
 .lesson div:nth-of-type(3) {
     background-color: rgb(255 216 158);
 }
+.lesson > p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.lesson br.none {
+    display: block;
+}
 /* 授業風景 */
 section.scenery > img {
     object-fit: cover;
@@ -298,7 +306,7 @@ footer small {
 /* トップページリンク */
 /*リンクの形状*/
 #page-top a{
-	display: flex;
+    display: flex;
 	justify-content:center;
 	align-items:center;
 	background:#ff0004;
@@ -314,12 +322,12 @@ footer small {
 }
 
 #page-top a:hover{
-	background: #777;
+    background: #777;
 }
 
 /*リンクを右下に固定*/
 #page-top {
-	position: fixed;
+    position: fixed;
 	right: 10px;
 	bottom:10px;
 	z-index: 2;
@@ -330,32 +338,32 @@ footer small {
 
 /*　上に上がる動き　*/
 #page-top.UpMove{
-	animation: UpAnime 0.5s forwards;
+    animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
-  from {
-    opacity: 0;
-	transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-	transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*　下に下がる動き　*/
 #page-top.DownMove{
-	animation: DownAnime 0.5s forwards;
+    animation: DownAnime 0.5s forwards;
 }
 @keyframes DownAnime{
-  from {
-  	opacity: 1;
-	transform: translateY(0);
-  }
-  to {
-  	opacity: 1;
-	transform: translateY(100px);
-  }
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
 }
 
 /* レスポンシブ対応 */
@@ -424,6 +432,9 @@ footer small {
     }
     .lesson h3 {
         font-size: 1.5rem;
+    }
+    .lesson > p {
+        font-size: 1.4rem;
     }
     /* 資格 */
     .achievement h3 {
@@ -500,6 +511,13 @@ footer small {
     .lesson div {
         width: auto;
     }
+    .lesson > p {
+        font-size: 1.22rem;
+        text-align: left;
+    }
+    .lesson br.none {
+        display: none;
+    }
     /* 授業内容 */
     .scenery img {
         width: 260px;
@@ -540,6 +558,9 @@ footer small {
         font-size: 2rem;
     }
     /* 内容 */
+    .lesson > p {
+        font-size: 1.1rem;
+    }
     .adress {
         font-size: 0.9rem;
     }

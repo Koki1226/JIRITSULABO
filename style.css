@@ -333,19 +333,33 @@ h3 {
     font-size: 1.5rem;
 }
 /* 留学 */
+.abroad > p {
+    width: 70%;
+    text-align: left;
+    padding: 50px;
+    background-color: #ffe0b6;
+    border-radius: 40px;
+}
 .abroad p {
     font-size: 1.5rem;
 }
 .abroad div {
     text-align: left;
 }
-.abroad > div {
+section.abroad > div {
+    margin: 20px 0;
+    width: 70%;
+    padding: 50px;
+    background-color: #ffb6b6;
+    border-radius: 40px;
+}
+div.abroad {
     display: flex;
 }
-.abroad > div > div:nth-of-type(2) {
+div.abroad > div:nth-of-type(2) {
     margin-left: 20px;
 }
-.abroad {
+section.abroad {
     display: flex;
     flex-direction: column;
     align-items: center;
