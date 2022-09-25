@@ -189,7 +189,6 @@ section {
 section h2 {
     width: 100%;
     font-size: 3rem;
-    margin-top: 30px;
     margin-bottom: 20px;
     border-bottom: solid;
 }
@@ -227,7 +226,7 @@ section h2 {
     display: block;
 }
 /* 授業風景 */
-section.scenery > img {
+section.scenery  img {
     object-fit: cover;
     width: 300px;
     height: 180px;
@@ -238,7 +237,21 @@ section.scenery > img {
     font-size: 1.8rem;
 }
 .achievement p {
+    text-align: left;
     font-size: 1.5rem;
+}
+section.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement div {
+    width: 70%;
+    padding: 30px;
+    border-radius: 40px;
+}
+.achievement div {
+    background-color: #ffe0b6;
 }
 /* お問合せ */
 .inline {
@@ -518,10 +531,11 @@ footer small {
     .lesson br.none {
         display: none;
     }
-    /* 授業内容 */
-    .scenery img {
-        width: 260px;
-        height: 230px;
+    /* 授業風景*/
+    section.scenery img {
+        width: 160px;
+        height: 96px;
+        margin: 3px;
     }
     /* お問合せ */
     .LINE {
@@ -560,6 +574,16 @@ footer small {
     /* 内容 */
     .lesson > p {
         font-size: 1.1rem;
+    }
+    /* 授業風景*/
+    section.scenery img {
+        width: 130px;
+        height: 78px;
+        margin: 1px;
+    }
+    /* 入塾申し込みフォーム */
+    .form_main {
+        font-size: 1.2rem;
     }
     .adress {
         font-size: 0.9rem;
