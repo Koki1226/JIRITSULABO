@@ -406,7 +406,7 @@ footer small {
         display: block;
         width: 40px;
         height: 40px;
-        background-image: url(/photo/menu_white.svg);
+        background-image: url(../photo/menu_white.svg);
         background-size: 32px;
         background-position: center;
         background-repeat: no-repeat;
@@ -414,7 +414,7 @@ footer small {
         z-index: 2;
     }
     .burgermenu.is-active {
-        background-image: url(/photo/close.svg);
+        background-image: url(../photo/close.svg);
     }
     .menu {
         width: 100vw;

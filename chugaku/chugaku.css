@@ -396,7 +396,7 @@ footer small {
         display: block;
         width: 40px;
         height: 40px;
-        background-image: url(/photo/menu.svg);
+        background-image: url(../photo/menu.svg);
         background-size: 40px;
         background-position: center;
         background-repeat: no-repeat;
@@ -404,7 +404,7 @@ footer small {
         z-index: 2;
     }
     .burgermenu.is-active {
-        background-image: url(/photo/close.svg);
+        background-image: url(../photo/close.svg);
     }
     .menu {
         width: 100vw;
@@ -497,7 +497,7 @@ footer small {
     }
     /* キャッチコピー */
     .slogan {
-        font-size: 150%;
+        font-size: 190%;
         top: 30%;
     }
     .slogandiv span {
@@ -573,7 +573,7 @@ footer small {
     }
     /* 内容 */
     .lesson > p {
-        font-size: 1.1rem;
+        font-size: 0.5rem;
     }
     /* 授業風景*/
     section.scenery img {
