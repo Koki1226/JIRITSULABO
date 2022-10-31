@@ -387,6 +387,9 @@ section.abroad {
 .abroad-iphone {
     display: none;
 }
+.abroad a {
+    font-size: 1.2rem;
+}
 /* 代表挨拶 */
 div.greeting {
     display: flex;
@@ -850,7 +853,7 @@ footer small {
     }
     /* 留学 */
     .abroad p {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     /* 代表挨拶 */
     div.greeting {
